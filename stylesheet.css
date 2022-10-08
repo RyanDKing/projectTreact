@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 2rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.purple {
+  color: #6415ff;
+}
+
+.nav__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__img--wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 24px 0 0;
+}
+
+.logo {
+  height: 36px;
+  max-width: 100%;
+}
+
+.img__txt {
+  font-size: 24px;
+
+  padding-left: 14px;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  padding-left: 40px;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 14px inter, system-ui;
+  color: #243e63;
+  padding: 0 0 4px;
+  text-decoration: none;
+  margin: 0 24px;
+}
+
+.nav__link--login {
+  margin: 0 24px 0 48px;
+  padding: 0 0 24px;
+}
+
+.btn {
+  font-size: 16px;
+  border-radius: 9999px;
+  background-color: #6415ff;
+  color: white;
+  padding: 12px 32px;
+  border: none;
+}
+
+#header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.header__container {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  padding: 96px 0;
+}
+
+.header__column1 {
+  height: 472.663px;
+  border: 472px;
+  width: 41.6667%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 36px;
+  padding: 4px;
+}
+
+.header__para {
+  font: 12px;
+  margin-top: -12px;
+}
+
+.header__para--1 {
+  font-size: 16px;
+  margin: 32px 0;
+  color: #243e63;
+}
+
+input {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px 192px 20px 32px;
+  border-width: 2px;
+  border: none;
+}
+
+.header__input--wrapper {
+  border: 2px;
+  border-radius: 9999px;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.header__input {
+  width: 100%;
+  content: 220px 24px;
+  padding: 20px 192px 20px 32px;
+  border: 2px solid lightgray;
+  border-radius: 24px;
+  /* display: flex; */
+}
+
+.header__img--wrapper {
+  opacity: 0.5;
+}
+
+.header__para--2 {
+  color: #a0aec0;
+}
+
+.header__btn {
+  position: absolute;
+  display: flex;
+  margin: 8px 8px 8px 0;
+}
+
+.header__img--column1 {
+  max-width: 100%;
+  height: auto;
+  margin: 16px 0 0;
+  padding: 0 64px 0 0;
+}
+
+.header__column2 {
+  width: calc(100% - 41.6667%);
+  display: flex;
+}
+
+.header__img2--wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.header__img2 {
+  width: 80%;
+}
+
+/* 
+FEATURES SECTION 
+*/
+
+.features__container {
+  /* margin: 0 45.5px; */
+  padding: 80px 0;
+}
+
+.features__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features__main-headline {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 16px 0;
+  letter-spacing: 1.6px;
+}
+
+.feat__headline {
+  color: #243e63;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.features__services {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  width: calc(100% / 3);
+}
+
+.service--secure {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__title {
+  font-size: 24px;
+}
+
+.para__features {
+  width: 100%;
+  max-width: 576px;
+  font-size: 18px;
+  color: #7c8ba1;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.service__wrapper {
+  display: flex;
+  margin: 0 16px 0 16px;
+  padding: 32px 8px;
+}
+
+.img__container {
+  height: 4px;
+  width: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img__description {
+  height: 24px;
+  width: 24px;
+}
+
+.description__secure {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 0 12px;
+}
+
+.para__description {
+  width: 200px;
+  line-height: 2;
+  margin: 16px 0 0;
+  color: #7c8ba1;
+}
