@@ -11,8 +11,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  padding: 2rem;
+header,
+main {
+  padding: 16px;
 }
 
 p {
@@ -31,6 +32,8 @@ li {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 32px;
+  padding: 32px;
 }
 
 .nav__container {
@@ -63,21 +66,23 @@ li {
   align-items: center;
 }
 
-.nav__link:hover {
-  text-decoration: underline;
-}
-
 .nav__link {
   font-size: 14px inter, system-ui;
   color: #243e63;
   padding: 0 0 4px;
   text-decoration: none;
   margin: 0 24px;
+  display: flex;
+  text-align: center;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
 }
 
 .nav__link--login {
   margin: 0 24px 0 48px;
-  padding: 0 0 24px;
+  /* padding: 0 0 24px; */
 }
 
 .btn {
@@ -95,18 +100,23 @@ li {
   transform: scale(1.05);
 }
 
-#header {
+/* 
+HEADER SECTION 
+*/
+
+.header__container {
+  padding: 96px 32px;
+}
+
+.header__row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 40px;
 }
 
-.header__container {
-  width: 100%;
+.header__column--wrapper {
   display: flex;
-  /* flex-direction: column; */
-  padding: 96px 0;
+  flex-wrap: wrap;
 }
 
 .header__column1 {
@@ -117,7 +127,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .header__title {
@@ -212,8 +222,8 @@ FEATURES SECTION
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 0 10px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f,
-    0 0 0 40px #6d588e, 0 0 0 50px #405378;
+  /* box-shadow: 0 0 0 10px #ee6352, 0 0 0 20px #d45379, 0 0 0 30px #a4558f,
+    0 0 0 40px #6d588e, 0 0 0 50px #405378; */
 }
 
 .features__main-headline {
@@ -232,7 +242,6 @@ FEATURES SECTION
 }
 
 .features__services {
-  display: flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -308,7 +317,7 @@ QUALITY WORK SECTION
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 96px 0;
+  padding: 96px 32px;
   display: flex;
 }
 
@@ -372,11 +381,14 @@ STEPS Section
  */
 
 .steps__row {
-  width: 100%;
-  min-width: 1200px;
-  margin: 0 auto;
   display: flex;
   padding: 96px 0;
+}
+
+.steps__box-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .steps__img--container {
@@ -457,7 +469,6 @@ PRICING SECTION
 
 .plans {
   display: flex;
-  flex-wrap: nowrap;
   padding: 96px 0;
 }
 
@@ -577,4 +588,142 @@ PRICING SECTION
 .plan__btn--business {
   background: #ffff;
   color: #6315ff;
+}
+
+/* 
+FOOTER SECTION
+ */
+
+.footer {
+  background-color: #6315ffda;
+  height: 560px;
+}
+
+.footer__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.links__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__titles {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5);
+  align-items: center;
+  color: #ffff;
+  margin: 48px 0 0;
+}
+
+.footer__link-header,
+.footer__link {
+  width: max-content;
+}
+
+.footer__link-header {
+  font-weight: 700;
+  margin: 16px 0 32px 0;
+  font-size: 20px;
+}
+
+.footer__link {
+  font-size: 16px;
+  margin: 12px 0 0;
+  padding: 0 0 4px;
+  cursor: not-allowed;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  transform: translate(0.5px);
+  color: gold;
+}
+
+.footer__division {
+  width: 100%;
+  border: 1px groove rgba(0, 0, 0, 0.173);
+  margin: 64px 0;
+}
+
+/* FOOTER ROW2 */
+
+.footer__row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row2__colum1,
+.row2__colum2,
+.row2__colum3 {
+  display: flex;
+  align-items: center;
+}
+
+.img__txt-footer {
+  color: #ffffff;
+}
+
+.para__footer {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.row2__colum2 {
+  /* display: flex;
+  align-items: center; */
+}
+
+.footer__logo {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.footer__logo {
+  margin-left: 16px;
+}
+
+.footer__logo:hover {
+  box-shadow: 0 0 0 2px #a0aec0;
+  box-shadow: 0 0 0 4px #152e50;
+}
+
+@media (max-width: 1024px) {
+  .plans {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  .header__img2 {
+    display: none;
+    overflow: auto;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+  }
 }
